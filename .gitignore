@@ -1,5 +1,10 @@
 .classpath
-.projects
+.project
 
 *.class
 *.jar
+
+.settings/
+war/WEB-INF/classes/
+war/WEB-INF/lib/
+war/WEB-INF/appengine-generated/
