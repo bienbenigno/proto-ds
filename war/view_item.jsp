@@ -74,14 +74,16 @@ request.setAttribute("eventId", item.getEventId());
 				<div style="font-size: .9em;">${item.createdDatetimeString}</div>
 			</div>
 		</div>
-		<div>
+		<c:if test="${not empty item.photo}">
 			<div>
-					<img alt="${item.photo}" src="serveImage?blob-key=${item.photo}" 
-							style="cursor: pointer;"
-							class="img-polaroid"
-							onclick="location.href='serveImage?blob-key=${item.photo}'" />
+				<div>
+						<img alt="${item.photo}" src="serveImage?blob-key=${item.photo}" 
+								style="cursor: pointer;"
+								class="img-polaroid"
+								onclick="location.href='serveImage?blob-key=${item.photo}'" />
+				</div>
 			</div>
-		</div>
+		</c:if>
 	</div>
 	<br>
 	<div class="container">
